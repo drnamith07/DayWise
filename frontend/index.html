@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DayWise — Your AI LifeOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">d</span><span>daywise<span class="brand-dot">.</span><small>YOUR AI LIFEOS</small></span></a>
+      <div class="side-label">WORKSPACE</div>
+      <nav>
+        <button class="nav-item active" data-view="overview"><span>◫</span> Overview</button>
+        <button class="nav-item" data-view="myday"><span>◷</span> My day</button>
+        <button class="nav-item" data-view="wellbeing"><span>♡</span> Mind & body</button>
+        <button class="nav-item" data-view="academics"><span>▤</span> Academics</button>
+        <button class="nav-item" data-view="connections"><span>⌘</span> Connected world <em>4</em></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="privacy-card"><span class="privacy-icon">⌑</span><b>Your data, your choice</b><p>DayWise only uses information you choose to connect or enter.</p><button id="privacyBtn">Privacy controls ↗</button></div>
+        <div class="profile"><div class="avatar">N</div><div><b>Namith</b><small>Student workspace</small></div><span class="dots">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div><div class="eyebrow" id="dateLabel">THURSDAY, NOVEMBER 26</div><h1 id="pageTitle">Your day, in one view.</h1></div>
+        <div class="top-actions"><span class="sync-pill"><i></i> Demo data</span><button class="icon-btn" id="notifBtn" aria-label="Notifications">♧<b></b></button><div class="avatar small">N</div></div>
+      </header>
+
+      <section class="view active" id="overview">
+        <div class="welcome-row"><div><h2>Good afternoon, Namith <span>✦</span></h2><p>Here's what your day is telling us so far.</p></div><div class="date-chip">TODAY <b>26 NOV</b></div></div>
+
+        <div class="hero-grid">
+          <article class="ai-hero">
+            <div class="hero-top"><span class="ai-tag"><span>✳</span> DAYWISE INTELLIGENCE</span><span class="live-dot">● LIVE DEMO</span></div>
+            <div class="hero-copy"><h2>Your day is more<br>connected than you think.</h2><p>DayWise brings your study, screen habits and wellbeing into one picture — then helps you decide what matters next.</p></div>
+            <div class="hero-insight"><div class="spark">✦</div><div><small>YOUR CROSS-LIFE INSIGHT</small><b>Your focus window is coming up.</b><p>You've had a busy morning. Try a 25-minute study session, then take a short movement break.</p></div></div>
+            <button class="light-button" id="askAi">Ask DayWise <span>↗</span></button>
+            <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+          </article>
+          <article class="focus-card panel">
+            <div class="card-heading"><div><span class="section-kicker">DAILY BALANCE</span><h3>Your day at a glance</h3></div><span class="circle-more">•••</span></div>
+            <div class="balance-ring"><div class="ring-inner"><strong>72<span>%</span></strong><small>DAY BALANCE</small></div></div>
+            <div class="balance-caption"><span class="status-dot"></span> You're finding a steady rhythm</div>
+            <div class="mini-legend"><span><i class="purple"></i> Focus</span><span><i class="mint"></i> Wellbeing</span><span><i class="orange"></i> Recovery</span></div>
+          </article>
+        </div>
+
+        <div class="section-title"><div><span class="section-kicker">THE WHOLE PICTURE</span><h3>Your signals, connected</h3></div><button class="text-button" data-goto="wellbeing">Explore wellbeing ↗</button></div>
+        <div class="signal-grid">
+          <article class="signal-card panel"><div class="signal-head"><span class="signal-icon lilac">◴</span><span class="trend up">↓ 12% <small>vs yesterday</small></span></div><small>SCREEN TIME</small><div class="metric">3h 24m</div><div class="tiny-bars"><i style="height:38%"></i><i style="height:55%"></i><i style="height:42%"></i><i style="height:76%"></i><i style="height:60%"></i><i style="height:88%"></i><i class="today" style="height:49%"></i></div><p>Social + entertainment usage</p></article>
+          <article class="signal-card panel"><div class="signal-head"><span class="signal-icon pink">♡</span><span class="trend neutral">RESTING</span></div><small>HEART RATE</small><div class="metric">72 <small class="unit">bpm</small></div><div class="sparkline"><svg viewBox="0 0 220 40" preserveAspectRatio="none"><path d="M0 23 C12 22 12 9 25 15 S43 30 55 20 S70 6 83 17 S103 29 116 18 S135 8 148 19 S169 28 180 16 S204 11 220 17" /></svg></div><p>Illustrative wearable reading</p></article>
+          <article class="signal-card panel"><div class="signal-head"><span class="signal-icon mint">☾</span><span class="trend up">+ 35m <small>vs last night</small></span></div><small>SLEEP</small><div class="metric">7h 35m</div><div class="sleep-track"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p>Sleep duration from sample data</p></article>
+          <article class="signal-card panel"><div class="signal-head"><span class="signal-icon blue">⌁</span><span class="trend neutral">ON TRACK</span></div><small>DAILY MOVEMENT</small><div class="metric">6,840 <small class="unit">steps</small></div><div class="progress"><i style="width:68%"></i></div><p>68% of your sample daily goal</p></article>
+        </div>
+
+        <div class="bottom-grid">
+          <article class="panel schedule-panel"><div class="card-heading"><div><span class="section-kicker">UP NEXT</span><h3>Today's flow</h3></div><button class="text-button" data-goto="myday">Full day ↗</button></div>
+            <div class="timeline">
+              <div class="time">09:00</div><div class="timeline-mark done"></div><div class="event"><b>Morning classes</b><small>Academic · Completed</small></div>
+              <div class="time">11:30</div><div class="timeline-mark done"></div><div class="event"><b>Assignment review</b><small>Study block · Completed</small></div>
+              <div class="time">15:30</div><div class="timeline-mark next"></div><div class="event current"><b>Deep focus session</b><small>25 minutes · Suggested by DayWise</small></div>
+              <div class="time">17:00</div><div class="timeline-mark"></div><div class="event"><b>Walk & reset</b><small>Wellbeing · Planned</small></div>
+            </div>
+          </article>
+          <article class="panel tasks-panel"><div class="card-heading"><div><span class="section-kicker">ACADEMIC PULSE</span><h3>Keep moving forward</h3></div><span class="task-count">2 / 3</span></div>
+            <div class="task-row"><span class="check checked">✓</span><div><b>Review lecture notes</b><small>Completed</small></div></div>
+            <div class="task-row"><span class="check checked">✓</span><div><b>Submit lab record</b><small>Completed</small></div></div>
+            <div class="task-row"><span class="check"></span><div><b>Prepare for quiz</b><small>Due tomorrow</small></div></div>
+            <button class="outline-button" data-goto="academics">View academic planner</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="myday">
+        <div class="page-intro"><span class="section-kicker">YOUR PERSONAL TIMELINE</span><h2>Make the day work for you.</h2><p>One timeline for commitments, recovery and the little things in between.</p></div>
+        <div class="panel full-panel"><div class="card-heading"><h3>Thursday, 26 November</h3><button class="outline-button" id="addEvent">+ Add a focus block</button></div><div id="dayEvents" class="day-events"></div></div>
+      </section>
+
+      <section class="view" id="wellbeing">
+        <div class="page-intro"><span class="section-kicker">MIND & BODY</span><h2>Wellbeing is part of the plan.</h2><p>Understand patterns across your screen habits, mood, sleep and movement.</p></div>
+        <div class="signal-grid expanded">
+          <article class="signal-card panel"><span class="signal-icon lilac">◴</span><small>SCREEN TIME</small><div class="metric">3h 24m</div><p>Social, study and entertainment app usage — sample data.</p></article>
+          <article class="signal-card panel"><span class="signal-icon pink">♡</span><small>HEART RATE</small><div class="metric">72 <small class="unit">bpm</small></div><p>Wearable connection is simulated in this prototype.</p></article>
+          <article class="signal-card panel"><span class="signal-icon mint">☾</span><small>SLEEP</small><div class="metric">7h 35m</div><p>Duration and consistency can be reviewed together.</p></article>
+          <article class="signal-card panel"><span class="signal-icon blue">⌁</span><small>STEPS & CALORIES</small><div class="metric">6,840</div><p>Movement summary from illustrative sample readings.</p></article>
+        </div>
+        <div class="bottom-grid"><article class="panel form-panel"><span class="section-kicker">CHECK IN WITH YOURSELF</span><h3>How are you feeling right now?</h3><div class="mood-options" id="moodOptions"><button data-mood="Low">☁️<span>Low</span></button><button data-mood="Okay">🌤️<span>Okay</span></button><button data-mood="Good" class="selected">☀️<span>Good</span></button><button data-mood="Great">✨<span>Great</span></button></div><label for="moodNote">Anything you want DayWise to know?</label><textarea id="moodNote" placeholder="A little context helps your daily reflection..."></textarea><button class="primary-button" id="saveMood">Save check-in</button><p class="form-feedback" id="moodFeedback"></p></article>
+        <article class="panel"><span class="section-kicker">A GENTLE REMINDER</span><h3>Signals are not diagnoses.</h3><p class="muted">DayWise can help you notice patterns and build routines. It does not diagnose stress, blood pressure conditions or other medical issues. For health concerns, use a qualified healthcare professional.</p><div class="soft-callout">✦ <span>Small, consistent choices matter more than perfect numbers.</span></div></article></div>
+      </section>
+
+      <section class="view" id="academics">
+        <div class="page-intro"><span class="section-kicker">ACADEMIC LIFE</span><h2>Your goals, without the chaos.</h2><p>Bring classes, attendance, assignments and personal goals into the same daily picture.</p></div>
+        <div class="academic-stats"><article class="panel"><small>ATTENDANCE</small><b>86<span>%</span></b><p>Sample semester overview</p></article><article class="panel"><small>OPEN TASKS</small><b id="openTasks">1</b><p>One needs your attention</p></article><article class="panel"><small>WEEKLY GOAL</small><b>4<span>/5</span></b><p>Study sessions completed</p></article></div>
+        <div class="panel full-panel"><div class="card-heading"><div><span class="section-kicker">YOUR TASK LIST</span><h3>Academic priorities</h3></div><button class="outline-button" id="newTask">+ Add task</button></div><div id="taskList"></div></div>
+      </section>
+
+      <section class="view" id="connections">
+        <div class="page-intro"><span class="section-kicker">YOUR CONNECTED WORLD</span><h2>Your life, not another silo.</h2><p>Choose which sources DayWise may use. You stay in control of every connection.</p></div>
+        <div class="connection-grid">
+          <article class="panel connection-card"><div class="connection-logo phone">▣</div><div><b>Phone usage</b><small>Screen time & app categories</small></div><span class="connection-status sample">DEMO</span><p>See how digital habits fit around study, sleep and breaks.</p><button class="connect-btn" data-connect="Phone usage">Manage access</button></article>
+          <article class="panel connection-card"><div class="connection-logo watch">◉</div><div><b>Smartwatch</b><small>Heart rate, sleep & activity</small></div><span class="connection-status sample">DEMO</span><p>Bring wearable summaries into your daily wellbeing picture.</p><button class="connect-btn" data-connect="Smartwatch">Manage access</button></article>
+          <article class="panel connection-card"><div class="connection-logo calendar">▦</div><div><b>Calendar</b><small>Classes & schedule</small></div><span class="connection-status sample">DEMO</span><p>Understand the shape of your day and find realistic focus time.</p><button class="connect-btn" data-connect="Calendar">Manage access</button></article>
+          <article class="panel connection-card"><div class="connection-logo learning">▤</div><div><b>Learning tools</b><small>Tasks & deadlines</small></div><span class="connection-status sample">DEMO</span><p>Keep assignments and goals visible alongside wellbeing.</p><button class="connect-btn" data-connect="Learning tools">Manage access</button></article>
+        </div>
+        <div class="soft-callout wide">⌑ <span><b>Designed around consent.</b> This concept shows where integrations would live. Actual access depends on each platform's permissions, APIs and device capabilities.</span></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="assistant-panel" id="assistantPanel" aria-hidden="true">
+    <div class="assistant-head"><div class="assistant-avatar">✳</div><div><b>DayWise Intelligence</b><small>Context-aware daily assistant · Demo</small></div><button id="closeAssistant">×</button></div>
+    <div class="assistant-body"><div class="chat-bubble">Hi Namith! I bring your day into one picture. Ask me about your focus, routine or what you could do next.</div><div class="suggestion-chips"><button>Plan my next 3 hours</button><button>Help me balance screen time</button><button>What should I prioritise?</button></div><div id="chatReply" class="chat-bubble reply">Based on the sample day, a short focus block followed by a movement break could be a useful next step. This is a demo suggestion, not a medical assessment.</div></div>
+    <form id="chatForm" class="chat-input"><input id="chatInput" placeholder="Ask about your day..." autocomplete="off"><button aria-label="Send">↑</button></form>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
